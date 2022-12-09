@@ -1,7 +1,8 @@
 import React from 'react';
-import Auth from '../utils/auth';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
+
+import Auth from '../utils/auth';
 // import useQuery Hook from Apollo Client
 import { useQuery } from '@apollo/client';
 // import query created in utils/queries.js

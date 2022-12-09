@@ -1,14 +1,14 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import Auth from '../utils/auth';
 
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
 
+import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
-const Profile = () => {
+const Profile = (props) => {
   // useParams hook retrieves username from URL
   const { username: userParam } = useParams();
   // and passes it to this useQuery hook
